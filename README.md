@@ -1,3 +1,3 @@
-##Framework: NextJS
+# Framework: NextJS
 
-##Styling: TailwindCSS
+# Styling: TailwindCSS
