@@ -64,7 +64,7 @@ export default function Index() {
   if (!loading)
     return (
       <div className="flex flex-col items-center justify-center h-screen bg-[#EFEAE5]">
-        <div className="bg-primary w-full absolute top-0 flex items-center justify-center font-semibold py-2.5 h-[30px]">
+        <div className="bg-primary w-full absolute top-0 flex items-center justify-center font-semibold py-2.5 lg:h-[30px]">
           Développeur Front End chez Collingwood, Victoria, Australie
         </div>
         <Grid prize={prize}>
@@ -74,6 +74,7 @@ export default function Index() {
           {controller.map((item, index) => {
             return (
               <button
+                disabled={x === prize % 5 && y === Math.floor(prize / 5) ? true : false}
                 className="px-4 py-2 bg-primary text-white rounded-[0.375rem]"
                 key={index}
                 onClick={item.handler}
